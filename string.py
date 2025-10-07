@@ -1,2 +1,3 @@
 name = "Ammar"
-print(name)
+fname = "Anwer"
+print(name+" "+fname)
