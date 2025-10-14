@@ -44,3 +44,9 @@ num1 = "100"
 num2 = 50
 result = int(num1) + num2
 print("The result is:", type(result))
+
+# Use input() to take two numbers and add them
+weight = int(input("Enter your weight: "))
+height = int(input("Enter your height:"))
+bmi = weight / (height ** 2)
+print(bmi)
