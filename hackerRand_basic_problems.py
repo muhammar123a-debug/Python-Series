@@ -74,3 +74,5 @@ def student_analyzer():
       topper = df.loc[df["Total"].idxmax()]
       print("Topper:", topper["Name"], "| Total Marks:", topper["Total"])
 
+
+
