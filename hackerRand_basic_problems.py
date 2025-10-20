@@ -88,3 +88,39 @@ def even_odd_counter(numbers):
       print(f"{num} is Odd")
 
 even_odd_counter([10, 20, 33, 40, 55, 60, 75, 80, 91, 100])
+
+# Q2: Reverse with Loop
+def reverse_string(s):
+  reversed_s = ""
+  for char in s:
+    reversed_s = char + reversed_s
+  return reversed_s
+print(reverse_string("Hello"))
+
+# 💡 Q3: Largest of Three Numbers
+def largest_number(a,b,c):
+  if a > b and a > c:
+    return a
+  elif b >a and b > c:
+    return b
+  else:
+    return c
+print(largest_number(40, 40.5, 40))
+
+# 🧩 3. Number Guessing Game
+import random
+def number_guessing_game():
+  number_to_gess = random.randint(1, 99)
+  atempts = 0
+  while True:
+    user_gess = int(input("Enter your guess (1-99): "))
+    atempts += 1
+    if user_gess < number_to_gess:
+      print("Too Low")
+    elif user_gess > number_to_gess:
+      print("Too High")
+    else:
+      print(f"Congratulations! You guessed it in {atempts} attempts.")
+      break
+  
+number_guessing_game()
