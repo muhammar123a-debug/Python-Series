@@ -48,3 +48,12 @@ print(user_db)
 # Attempt to login
 print(Login("user1", "pass123", user_db))
 print(Login("user1", "wrongpass", user_db))
+
+print(Login("user2", "pass123", user_db))
+# Output:
+# Registration successful.
+# {'user1':
+# 'pass123'}
+# Login successful.
+# Incorrect password.
+# Username does not exist.
