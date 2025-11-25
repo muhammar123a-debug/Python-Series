@@ -56,6 +56,20 @@ if Degree == True:
 else:
     print("Degree required")
 
+# Task 1: Login System
+# username = str(input("Enter username: "))
+# password = str(input("Enter password: "))
+# is_blocked = True
+# if is_blocked == True:
+#     if username == "admin" and password == "admin123":
+#         print("Login Successful")
+#     else:
+#         print("Invalid Credentials")
+# else:
+#     print("Account is blocked")
+
+
+
 # Task 2: Scholarship Eligibility
 marks = 89.99
 sports_certificate = True
@@ -68,6 +82,17 @@ if marks >= 90:
 else:
     print("Marks not sufficient for Scholarship")
 
+total_marks = int(input("Enter total marks: "))
+sports_certificate = False
+family_income= int(input("Enter family income: "))
+if total_marks >= 85 or sports_certificate == True:
+    if family_income <= 50000:
+        print("Eligible for Scholarship")
+    else:
+        print("Not eligible for Scholarship due to high family income")
+else:
+   print("Not eligible for Scholarship due to low marks and no sports certificate") 
+
 # Task 3: Online Shopping Checkout
 Login_status = True
 card_item = 1
@@ -79,3 +104,19 @@ if Login_status == True:
         print("Order Failed")
 else:
     print("Please login to continue shopping")
+
+# Task 4: Exam Result Evaluation
+attendance = 80
+persontage = 90
+if attendance >= 70:
+    print("Eligible for Exam")
+    if persontage >= 90:
+        print("Grade A")
+    elif persontage >= 80:
+        print("Grade B")
+    elif persontage >= 70:
+        print("Grade C")
+    else:
+        print("Fail, because of low percentage")
+else:
+    print("Not Eligible for Exam due to low attendance")
