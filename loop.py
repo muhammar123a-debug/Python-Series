@@ -131,3 +131,33 @@ for n in list_name:
         count_i += 1
         print(n)
 print("Names containing 'i':", count_i)
+
+list = [15, 22, 33, 40, 7, 55, 60]
+for item in list:
+    if item > 50:
+        break
+    print("Item:", item)
+
+# Print numbers “Even Large” or “Odd Small”
+for i in range(1, 21):
+    if i % 2 == 0  and i > 10:
+        print(i, "Even Large")
+    elif i % 2 != 0 and i < 10:
+        print(i, "Odd Small")
+    else:
+        print(i)
+
+# Software-Oriented Logical Loop Questions
+# Question 1 — Bank ATM Simulation
+attempts = 3
+while attempts > 0:
+    pin = int(input("Enter your 4-digit PIN: "))
+    if pin == 4321:
+        print("Access Granted. Welcome to your account!")
+        break
+    else:
+        attempts -= 1
+        print("Incorrect PIN. Try again.")
+if attempts == 0:
+    print("Account locked due to too many incorrect attempts.")
+
