@@ -57,3 +57,77 @@ for price in prices:
         total_price += price
 print("Total price of items less than 100:", total_price)
 
+texts = "The quick brown fox jumps over the lazy dog"
+vowel_count = 0
+for char in texts.lower():
+    if char in "aeiou":
+        vowel_count += 1
+print("Total number of vowels in the string:", vowel_count)
+
+
+text = "Ammar123Hello9"
+digit_count = 0
+for ch in text:
+    if ch.isdigit():
+        digit_count += 1
+print("Total number of digits in the string:", digit_count)
+
+name = "Ammar"
+reverse = ""
+for char in name:
+    reverse = char + reverse
+    print("Intermediate reverse:", reverse)
+print("Reversed string:", reverse)
+
+text = "Hello World"
+search_char = str(input("Enter a character to search: "))
+found = False
+for ch in text:
+    if ch == search_char:
+        found = True
+        break
+if found:
+    print(f"The character '{search_char}' is found in the string.")
+else:
+    print(f"The character '{search_char}' is not found in the string.")
+
+
+for u in range(1, 6):
+    print("*"*u)
+
+for v in range(5,0,-1):
+    print("*"*v)
+
+for i in range(1, 50):
+    print(f"7 x {i} = {1 * 7}")
+
+for p in range(1, 31):
+    if p % 3 == 0 and p % 5 == 0:
+        print("FizzBuzz")
+    elif p % 3 == 0:
+        print("fizz")
+    elif p % 5 == 0:
+        print("Buzz")
+    else:
+        print(p)
+count_division_by_3 = 0
+for q in range(1, 51):
+    if q % 3 == 0:
+        count_division_by_3 += 1
+        
+print("Total numbers divisible by 3 from 1 to 50:", count_division_by_3)
+
+list = [12, 45, 67, 22, 90, 33, 50, 97]
+larg_even = 0
+for num in list:
+    if num % 2 == 0 and num > larg_even:
+        larg_even = num
+print("Largest even number in the list:", larg_even)
+
+list_name = ["Ali", "Ammar", "Bilal", "Anas", "Sara"]
+count_i = 0
+for n in list_name:
+    if "i" in n.lower():
+        count_i += 1
+        print(n)
+print("Names containing 'i':", count_i)
