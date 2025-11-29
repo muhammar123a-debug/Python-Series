@@ -210,3 +210,28 @@ while num <= 50:
         count += 1
     num += 1
 print("Total numbers divisible by 5 from 1 to 50:", count)
+
+pin = 1234
+attempt = 3
+while attempt > 0:
+    entered_pin = int(input("Enter your 4 digit PIN: "))
+    if entered_pin == pin:
+        print("Acess")
+        break
+    else:
+        attempt -= 1
+
+
+n = 1
+table = 7
+while n <= 10:
+    print(f"{table} x {n} = {table * n}")
+    n += 1 
+
+sum = 0
+n = 1
+while n <= 30:
+    if n % 2 == 0:
+        sum += n
+        print("Sum of even numbers from 1 to 30:", sum)
+    n += 1
