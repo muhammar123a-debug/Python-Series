@@ -120,3 +120,4 @@ if attendance >= 70:
         print("Fail, because of low percentage")
 else:
     print("Not Eligible for Exam due to low attendance")
+

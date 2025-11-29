@@ -1,3 +1,4 @@
+"""
 for i in range(5):
     print("Iteration:", i)
 
@@ -161,3 +162,51 @@ while attempts > 0:
 if attempts == 0:
     print("Account locked due to too many incorrect attempts.")
 
+"""
+# While loop
+
+i = 1
+while i <= 5:
+    print("Iteration:", i)
+    i += 1
+
+e = 1
+while e <= 11:
+    print(f"7 x {e} = {e * 7}")
+    e += 1
+# basic task in while loop
+
+i  = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+a = 1
+while a <= 10:
+    if a % 2 == 0:
+        print("Even number:", a)
+    a += 1
+
+reverse = 10
+while reverse >= 1:
+    print("Countdown:", reverse)
+    reverse -= 1
+
+guess = 0
+while guess != 7:
+    guess = eval(input("Guess any number between 1 - 20: "))
+    if guess == 'stop':
+        print("game stop")
+        break
+    elif guess == 7:
+        print("Congratulations! You guessed it right.")
+    else:
+        print("Try again!")
+
+count = 0
+num = 1
+while num <= 50:
+    if num % 5 == 0:
+        count += 1
+    num += 1
+print("Total numbers divisible by 5 from 1 to 50:", count)
