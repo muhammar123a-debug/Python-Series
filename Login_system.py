@@ -30,18 +30,12 @@ sign_up()
 
 def login():
     username = input("Enter your username: ")
-    if username not in db:
-        print("Your username is not exists")
-        return
-    email = input("Enter your email: ")
-    if email not in db:
-        print("Your email is not exist")
-        return
     password = input("Enter your password: ")
-    if password not in db:
-        print("Your password is wrong")
-        return
-    
-    print("Login successfully")
+
+    for user in db:
+        if user["username"] == username and user["password"] == password:
+            print("Login successfully", username)
+            return
+    print("Invalid username and password")
 
 print(login())
