@@ -1,5 +1,5 @@
 # condtional statement practice
-
+"""
 card_insert = True
 pin = "134"
 if card_insert:
@@ -120,4 +120,24 @@ if attendance >= 70:
         print("Fail, because of low percentage")
 else:
     print("Not Eligible for Exam due to low attendance")
+
+
+# condtional practice end
+user_age = int(input("Enter yor age: "))
+if user_age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote yet.")
+
+hair = str(input("Enter hair cutting: ").lower())
+if hair == "long":
+    print("You can get a discount on hair cutting.")
+else:
+    print("No discount available for short hair.")
+"""
+password = str(input("Enter your password: "))
+if password == "secure123":
+    print("Access granted.")
+else:
+    print("Access denied. Incorrect password.")
 
