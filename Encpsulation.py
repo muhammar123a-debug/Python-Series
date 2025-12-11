@@ -61,33 +61,33 @@ print(student1.get_age())
 student1.set_age(0)
 print(student1.get_age())
 
-class BankAccount:
-    def __init__(self, initial_balance):
-        self.__balance = initial_balance
+# class BankAccount:
+#     def __init__(self, initial_balance):
+#         self.__balance = initial_balance
 
-    def withdrow(self, amount):
-        if amount > 0 and amount <= self.balance:
-            self.__balance -= amount
-        else:
-            print("Invalid withdraw amount")
-    def deposit(self, amount):
-        if amount > 0:
-            self.__balance += amount
-        else:
-            print("Invalid deposit amount")
-    def get_balance(self):
-        return self.__balance
+#     def withdrow(self, amount):
+#         if amount > 0 and amount <= self.initial_balance:
+#             self.__balance -= amount
+#         else:
+#             print("Invalid withdraw amount")
+#     def deposit(self, amount):
+#         if amount > 0:
+#             self.__balance += amount
+#         else:
+#             print("Invalid deposit amount")
+#     def get_balance(self):
+#         return self.__balance
     
-# Example usage:
-account = BankAccount(1000)
-print(account.get_balance())
-account.deposit(500)
-print(account.get_balance())
-account.withdrow(200)
-print(account.get_balance())
-account.withdrow(2000)  # Invalid withdraw amount
-account.deposit(-100)   # Invalid deposit amount
-print(account.get_balance())
+# # Example usage:
+# account = BankAccount(1000)
+# print(account.get_balance())
+# account.deposit(500)
+# print(account.get_balance())
+# account.withdrow(10)
+# print(account.get_balance())
+# account.withdrow(2000)  # Invalid withdraw amount
+# account.deposit(-100)   # Invalid deposit amount
+# print(account.get_balance())
 
 
 class Car:
@@ -291,3 +291,44 @@ airport.remove_passenger()
 print(airport.get_passengers())
 airport.add_passenger()
 print(airport.get_passengers())
+
+
+class Patient:
+    def __init__(self, name, age, bed_number, diagnosis):
+        self.name = name
+        self.__age = age
+        self.__bed_number = bed_number
+        self.__diagnosis = diagnosis
+
+    def get_age(self):
+        if self.__age >= 0:
+            return self.__age
+        else:
+            print("Age cannot be negative")
+    
+    def set_age(self, new_age):
+        if new_age >= 0:
+            self.__age = new_age
+        else:
+            print("Age cannot be negative")
+    
+    def get_bed_number(self):
+        return self.__bed_number
+
+    def set_bed_number(self, new_bed_number):
+        if new_bed_number >= 0:
+            self.__bed_number = new_bed_number
+        else:
+            print("Bed number cannot be negative")
+    
+    def get_diagnosis(self):
+        return self.__diagnosis
+
+    def set_diagnosis(self, new_diagnosis):
+        self.__diagnosis = new_diagnosis
+
+patient1 = Patient("Asim", 30, 101, "Flu")
+print(patient1.name,patient1.get_age(),patient1.get_bed_number(), patient1.get_diagnosis())
+patient1.__age(15)
+print(patient1.get_age())
+print(patient1.name,patient1.get_age(),patient1.get_bed_number(), patient1.get_diagnosis())
